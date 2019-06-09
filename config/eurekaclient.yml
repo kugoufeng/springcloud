@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: eurekaclient
+  rabbitmq:                     #本地环境不需要配置mq
+      host: 192.168.109.138
+      port: 5672
+      username: guest
+      password: guest
 
 management:
   endpoints:
@@ -10,10 +15,5 @@ management:
       exposure:
         include: refresh,health,info,bus-refresh
 
-spring:
-  rabbitmq:                     #本地环境不需要配置mq
-      host: 192.168.109.138
-      port: 5672
-      username: guest
-      password: guest
+  
  
