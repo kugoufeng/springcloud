@@ -1,0 +1,5 @@
+!!com.lingxicloud.uis.manage.core.domain.zuul.Zuul
+zuul:
+  routes:
+    application-demo: {path: /application-demo/**, sensitiveHeaders: '', serviceId: APPLICATION-DEMO,
+      stripPrefix: true}
