@@ -3,3 +3,5 @@ zuul:
   routes:
     application-demo: {path: /application-demo/**, sensitiveHeaders: '', serviceId: APPLICATION-DEMO,
       stripPrefix: true}
+    api-gateway: {path: /api-gateway/**, sensitiveHeaders: '', serviceId: API-GATEWAY,
+      stripPrefix: true}
